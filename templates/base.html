@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A django website desc">
+        <meta name="keywords" content="A django website keyword">
+        <title>Django Base HTML!!</title>
+    </head>
+    <body>
+        {% block body %}
+            {# default content 會被子頁面覆蓋 #}
+            {# <p>Hello Word (in base.html)</p> #}
+
+            {# 再挖一個 content 區塊 #}
+            <p>Body block start</p>
+            {% block content %}
+                <p>content</p>
+            {% endblock content %}
+            <p>Body block end</p>
+        {% endblock body %}
+    </body>
+</html>

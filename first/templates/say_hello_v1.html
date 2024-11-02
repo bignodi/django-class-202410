@@ -1,0 +1,9 @@
+<p>Hello {{ name }}</p>
+
+{# 此處省略action, 再check 老師video #}
+
+<form method="post">
+    {% csrf_token %}  {# 阻擋跨站攻擊, 用csrf_token 隨時更新token/cookie值, 確保使用者表單是我們的網站產生 #}
+    <input type="text" placeholder="(請在這裡輸入)Name here" name="name">
+    <button type="submit">Send</button>
+</form>

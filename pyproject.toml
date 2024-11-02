@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "django-class-202410"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.13"
+django = "^5.1.2"
+
+
+[tool.poetry.group.dev.dependencies]
+djlint = "^1.35.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.djlint]
+profile = "django"
+# preserve_blank_lines = true
+# 只允許空白一行
+max_blank_lines = 1

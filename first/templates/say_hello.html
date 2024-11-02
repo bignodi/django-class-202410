@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{# 改放到母頁面的block 區塊#}
+{% block content %}
+    <p>Hello {{ name }}</p>
+
+    <form method="post" action="">
+        {% csrf_token %}
+        <input type="text" placeholder="Name here" name="name">
+        <button type="submit">Send</button>
+    </form>
+{% endblock content %}

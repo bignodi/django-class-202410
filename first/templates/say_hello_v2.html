@@ -1,0 +1,12 @@
+{% extends "base_v2.html" %}
+
+{# 可將以下 block body 移掉再測, 會show 母頁面定義的內容#}
+{% block body %}
+    <p>Hello {{ name }}</p>
+
+    <form method="post" action="">
+        {% csrf_token %}
+        <input type="text" placeholder="Name here" name="name">
+        <button type="submit">Send</button>
+    </form>
+{% endblock body %}
