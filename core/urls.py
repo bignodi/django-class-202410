@@ -41,10 +41,14 @@ from django.urls import path
 
 from first.views import message_view, say_hello, say_hello_template, say_hello_to
 
+## 另一種寫法
+from todo import views as todo_views
+
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("message/", message_view),
     path("say_hello/", say_hello),
     path("say_hello_template/", say_hello_template),
     path("say_hello_to/<str:name>", say_hello_to),
+    path("projects/", todo_views.project_list),
 ]

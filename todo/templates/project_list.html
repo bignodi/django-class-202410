@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <h1>Projects</h1>
+    {# 最簡單#}
+    {# {% for p in projects %}p.name{% endfor %} #}
+
+    {# 加上tag 排版#}
+    <ul>
+        {% for project in projects %}<li>{{ project.name }}</li>{% endfor %}
+    </ul>
+{% endblock body %}

@@ -1,0 +1,74 @@
+[
+{
+    "model": "todo.project",
+    "pk": 1,
+    "fields": {
+        "name": "Project A"
+    }
+},
+{
+    "model": "todo.project",
+    "pk": 2,
+    "fields": {
+        "name": "Project B"
+    }
+},
+{
+    "model": "todo.project",
+    "pk": 4,
+    "fields": {
+        "name": "Project D"
+    }
+},
+{
+    "model": "todo.project",
+    "pk": 5,
+    "fields": {
+        "name": "Project C"
+    }
+},
+{
+    "model": "todo.item",
+    "pk": 1,
+    "fields": {
+        "title": "OKOK",
+        "content": "",
+        "is_completed": false,
+        "end_time": null,
+        "project": 1
+    }
+},
+{
+    "model": "todo.item",
+    "pk": 3,
+    "fields": {
+        "title": "Task A",
+        "content": "",
+        "is_completed": false,
+        "end_time": null,
+        "project": 1
+    }
+},
+{
+    "model": "todo.item",
+    "pk": 5,
+    "fields": {
+        "title": "Task A",
+        "content": "cde",
+        "is_completed": false,
+        "end_time": null,
+        "project": 1
+    }
+},
+{
+    "model": "todo.item",
+    "pk": 7,
+    "fields": {
+        "title": "TTT",
+        "content": "xyz",
+        "is_completed": false,
+        "end_time": null,
+        "project": 2
+    }
+}
+]
